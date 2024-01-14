@@ -1,0 +1,72 @@
+
+body {
+  background-color: black;
+  color: white; /* Set text color to white for better readability on a dark background */
+}
+
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px; /* Adjust based on your maximum width requirements */
+  margin: auto; /* Centers the grid in the middle of the page */
+}
+
+/* Styles for each movie div */
+.movie {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(27, 2, 2, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the movie link */
+.movie-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Styles for the movie image */
+.movie-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styles for the movie title */
+.movie-title {
+  padding: 0.5rem;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1200px) {
+  .movies-list {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .movies-list {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movies-list {
+      grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+}

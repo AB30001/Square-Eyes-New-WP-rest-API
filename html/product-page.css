@@ -1,0 +1,129 @@
+body {
+  background-color: black;
+  color: white; /* Set text color to white for better readability on a dark background */
+}
+
+
+.loading-indicator {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.movie-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjust the height as needed */
+  padding: 20px;
+}
+
+.movies-list {
+  width: 80%; /* Adjust the width as per your design */
+  margin: 0 auto; /* This will center the movies-list if it's smaller than the movie-page */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the items inside movies-list */
+  gap: 20px; /* Adjust the gap between items */
+}
+
+/* Styles for individual movie items */
+.movie {
+  flex-basis: 22%; /* Adjust the width of each movie item */
+  /* More styling for movie items */
+}
+
+.movie img {
+  width: 100%; /* Makes the image responsive within the movie item */
+  height: auto;
+  /* More styling for images */
+}
+
+/* product-page.css or a similar stylesheet */
+
+.movie-details {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.movie-details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.movie-details h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.movie-details p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.movie-details p.genre,
+.movie-details p.rating,
+.movie-details p.released,
+.movie-details p.price,
+.movie-details p.discountedPrice,
+.movie-details p.tags,
+.movie-details p.favorite {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Adjust other elements as needed to fit the theme */
+/* global.css */
+
+
+
+/* Common styles for both buttons */
+.watch-button,
+.download-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding for button size */
+  font-size: 1.2em; /* Adjust font size */
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px; /* Adjust border radius for rounded corners */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Watch button specific styles */
+.watch-button {
+  background-color: #ff4081; /* Pink color */
+  color: white;
+}
+
+/* Download button specific styles */
+.download-button {
+  background-color: #e53935; /* Red color */
+  color: white;
+}
+
+/* Hover effect for both buttons */
+.watch-button:hover,
+.download-button:hover {
+  background-color: #ff80ab; /* Lighter pink on hover */
+}

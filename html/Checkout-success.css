@@ -1,0 +1,156 @@
+body {
+    background-color: #161414;
+  }
+
+.container-payment-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 30px;
+    background-color: #161414;
+    color: #FFFFFF;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .icon-container {
+    margin-left: 40px;
+  }
+  
+  .icon-container img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .container-under-payment {
+    border: 1px solid #528729;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 365px;
+    height: 225px;
+    background-color: #161414;
+    color: #FFFFFF;
+  }
+  
+  .image-under-payment {
+    margin-right: 10px;
+  }
+  
+  .image-under-payment img {
+    width: 113px;
+    height: 160px;
+  }
+  
+  .text-container {
+    flex: 1;
+  }
+  
+  .text-line {
+    margin: 5px 0;
+  }
+  #invisible-column {
+    display: none;
+  }
+  
+  .purchase-info {
+    width: 796px;
+    height: auto;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #161414;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #FFFFFF;
+    overflow: hidden;
+  }
+  
+  .transaction-id {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .centered-buttons {
+    display: flex;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+  }
+  
+  .button {
+    margin: 1px;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  
+  .button:hover {
+    opacity: 0.5;
+  }
+  
+  .button img {
+    width: 80%;
+    height: 80%;
+  }
+  .checkout-success-main {
+    background-color: #161414;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .container-payment-success {
+      flex-direction: column;
+      height: auto;
+      margin: 20px;
+    }
+  
+    .icon-container {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .container-under-payment {
+      max-width: none;
+      width: 80%;
+    }
+  
+    .image-under-payment img {
+      width: 100px;
+      height: 140px;
+    }
+  
+    .purchase-info {
+      width: auto;
+      padding: 10px;
+      margin: 20px;
+    }
+  
+    .centered-buttons {
+      height: auto;
+      flex-direction: column;
+    }
+    #column-with-logo {
+        display: none;
+    }
+    
+  }
+  
+  

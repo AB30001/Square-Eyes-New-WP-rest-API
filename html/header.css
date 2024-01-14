@@ -1,0 +1,159 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+  
+  /* Header Styles */
+  header {
+    background-color: #161414;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 
+  }
+  
+  
+  .logo img {
+    width: 99px;
+    height: 58px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-btn {
+    padding: 8px 16px;
+    background-color: #161414;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+  }
+  
+  .search-btn:hover {
+    background-color: #F02828;
+  }
+  
+  .account-btn {
+    padding: 8px 16px;
+    background-color: #161414;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+  }
+  
+  .signout-btn {
+    padding: 8px 16px;
+    background-color: #F02828;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+  }
+  
+  .account-btn:hover,
+  .signout-btn:hover {
+    background-color: #F02828;
+    opacity: 0.7;
+  }
+  .burger-wrapper {
+    display: none;
+  }
+
+
+  
+  
+
+
+  @media (max-width: 768px) {
+    
+    
+    
+    .nav-desktop {
+        display:none;
+    }
+    .search-btn {
+        display: none;
+    }
+    
+    .burger-wrapper {
+        display: inline-block;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        
+    }
+        
+    .signout-btn {
+    display: none;    
+    }
+    
+    .logo img {
+        display:none;
+    }
+   
+
+    
+    
+    .nav-link {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        left: -100px;
+        transition: 1s all;
+
+    }
+
+    #hamburger-checkbox:checked ~ nav {
+        left: 10px;
+    }
+    #hamburger-checkbox {
+        display: none;
+    }
+
+    .burger-wrapper nav {
+        list-style-type: none;
+      }
+      
+      .burger-wrapper nav li {
+        background-color: #161414;
+      }
+      
+      .burger-wrapper nav li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      
+
+  }

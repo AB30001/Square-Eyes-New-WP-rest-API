@@ -1,0 +1,56 @@
+body {
+    background-color: #161414;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .text-container {
+    background-color: #151416;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: left;
+    max-width: 753px;
+  }
+  
+  .text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+
+  }
+  
+  .about-us-page {
+    background-color: #161414;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #invisible-column {
+        display: none;
+    }
+  }
+  
